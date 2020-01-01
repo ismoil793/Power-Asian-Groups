@@ -178,6 +178,10 @@ nav#menu li a {
     display: none;
 }
 
+.home-page-menu-style {
+    background-color: #4A57A0;
+}
+
 .hamburger-logo a {
     width: 170px;
     margin: 0 auto;
@@ -574,7 +578,7 @@ section.about-company {
 
 .item-pic-wrapper img {
     width: 500px;
-    height: 435px !important;
+    height: 400px;
     display: block;
     position: absolute;
     top: 25px;
@@ -657,6 +661,12 @@ section.about-company {
 .news-block-list {
     color: #454751;
     font-size: 20px;
+}
+
+.news-block-list a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 .news-block-list-item {
@@ -819,13 +829,22 @@ header.header-others .nav .nav-menu-li {
     line-height: 35px;
 }
 
+.clients-figure-wrap {
+    color: #a0a0a0;
+    transition: all 300ms ease-in-out;
+}
+
+.clients-figure-wrap:hover{
+    color: #a0a0a0;
+    transition: all 300ms ease-in-out;
+}
+
 .clients-figure {
     text-align: center;
     box-shadow: 0 0 15px 2px #F3F4F9;
     padding: 25px 0;
     border-radius: 2px;
     font-size: 16px;
-    color: #a0a0a0;
     margin: 12px 0;
     height: 170px;
     box-sizing: border-box;
@@ -978,3 +997,35 @@ header.header-others .nav .nav-menu-li {
 }
 
 /*-------------------------------------/products.html-----------------------------------*/
+
+
+
+/*-----------------------------------------Конопка Наверх------------------------------*/
+.top-button{
+    position:fixed;
+    bottom:25px;
+    right:-100px;
+    background-color:#e0e0e0;
+    z-index:99;
+    -webkit-border-radius:10em;
+    border-radius:10em;
+    color:#666;
+    font-size:26px;
+    width:50px;
+    height:50px;
+    text-align:center;
+    line-height:50px;
+    cursor:pointer;
+    -webkit-transition:all .25s ease;
+    -o-transition:all .25s ease;transition:all .25s ease;
+    opacity:.5
+}
+.top-button:hover{
+    color:#fff;
+    background-color:#717CBD;
+    opacity:1
+}
+.top-button.active{
+    right:25px
+}
+/*-----------------------------------------Конопка Наверх------------------------------*/

@@ -69,7 +69,7 @@
     }
 
     .item-pic-wrapper img {
-        height: 315px !important;
+        height: 315px;
     }
 
     .item-left {
@@ -363,10 +363,10 @@
     }
 
     a[href='#menu'] {
-        position: absolute;
-        top: 25px;
-        left: 10px;
-        z-index: 2;
+        position: fixed;
+        top: 22px;
+        left: 15px;
+        z-index: 999;
         color: #fff;
         display: block;
         font-size: 30px;
@@ -381,16 +381,19 @@
     }
 
     .hamburger-logo {
+        height: 70px;
         display: block;
-        position: absolute;
+        position: fixed;
         width: 100%;
-        top: 10px;
-        z-index: 2;
+        z-index: 99;
     }
 
     .hamburger-logo img {
         display: block;
         margin: 0 auto;
+        padding-top: 10px;
+        box-sizing: border-box;
+        height: 60px;
     }
 
     .company-picture {
@@ -438,7 +441,13 @@
 
 
     header.header-others {
+        position: fixed;
         height: 70px;
+        width: 100%;
+        z-index: 90;
+    }
+    .products-page-title,.clients-title,.about-us-title{
+        margin-top: 70px;
     }
 
     .clients {
@@ -468,6 +477,7 @@
     .item-pic-wrapper img {
         top: 15px;
         right: 15px;
+        height: 200px;
     }
 
     .company-picture {
